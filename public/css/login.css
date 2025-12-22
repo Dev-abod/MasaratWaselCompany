@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+* {
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+/* Forms */
+.form-box {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.6s ease-in-out;
+  background: #fff;
+}
+
+.form-box.register {
+  visibility: hidden;
+}
+
+.container.active .form-box.login {
+  right: 50%;
+}
+
+.container.active .form-box.register {
+  visibility: visible;
+  right: 50%;
+}
+
+/* Inputs */
+.input-box {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 13px 45px 13px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #eee;
+  outline: none;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.forgot-link {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background:#1D4ED8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Social */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 0 6px;
+  color: #333;
+}
+
+/* Toggle */
+.toggle-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.toggle-box::before {
+  content: "";
+  position: absolute;
+  left: -250%;
+  width: 300%;
+  height: 100%;
+  background: #1D4ED8
+
+
+;
+  border-radius: 100px;
+  transition: 1.5s ease-in-out;
+}
+
+.container.active .toggle-box::before {
+  left: 50%;
+}
+
+.toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.toggle-left {
+  left: 0;
+}
+
+.toggle-right {
+  right: -50%;
+}
+
+.container.active .toggle-left {
+  left: -50%;
+}
+
+.container.active .toggle-right {
+  right: 0;
+}
+
+.toggle-panel .btn {
+  width: 160px;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.form-box {
+  z-index: 3;
+}
+
+.toggle-box {
+  z-index: 1;
+}
+
+.toggle-panel {
+  z-index: 4;
+}
+
+.logo {
+  width: 30rem;
+  margin-bottom: 1px;
+  padding: 1px;
+}
+
