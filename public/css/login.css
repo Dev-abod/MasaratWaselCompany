@@ -76,9 +76,8 @@ body {
 }
 
 .forgot-link {
-  text-align: center;
+  text-align: right;
   margin-bottom: 15px;
-  padding-top: 10px;
 }
 
 .btn {
@@ -86,7 +85,7 @@ body {
   height: 40px;
   border-radius: 8px;
   border: none;
-  background:#1D4ED8;
+  background: #032fa8;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -119,11 +118,8 @@ body {
   left: -250%;
   width: 300%;
   height: 100%;
-  background: #1D4ED8
-
-
-;
-  border-radius: 100px;
+  background: #032fa8;
+  border-radius: 150px;
   transition: 1.5s ease-in-out;
 }
 
@@ -175,10 +171,3 @@ body {
 .toggle-panel {
   z-index: 4;
 }
-
-.logo {
-  width: 30rem;
-  margin-bottom: 1px;
-  padding: 1px;
-}
-

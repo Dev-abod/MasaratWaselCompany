@@ -11,7 +11,3 @@
 // login.addEventListener('click',()=>{
 //     container.classList.remove('active');
 // })
-
-  const container = document.getElementById("container");
-  document.querySelector(".register-btn").onclick = () => container.classList.add("active");
-  document.querySelector(".login-btn").onclick = () => container.classList.remove("active");
